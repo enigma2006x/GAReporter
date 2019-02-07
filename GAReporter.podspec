@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform = :ios
-s.ios.deployment_target = '10.0'
+s.ios.deployment_target = '9.0'
 s.name = "GAReporter"
 s.summary = "Google Analytics Wrapper"
 s.requires_arc = true
@@ -43,5 +43,5 @@ s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/GAReporter', 'D
 s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/GAReporter' }
 
 s.static_framework = true
-s.dependency 'JWPlayer-SDK'
+
 end
