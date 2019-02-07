@@ -43,4 +43,5 @@ s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/GAReporter', 'D
 s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/GAReporter' }
 
 s.static_framework = true
+s.dependency 'JWPlayer-SDK'
 end
