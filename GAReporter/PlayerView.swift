@@ -6,56 +6,56 @@
 
 import UIKit
 
-class TheView: UIView {
+open class TheView: UIView {
   @objc
-  var jwConfigs: JWConfig? {
+  open var jwConfigs: JWConfig? {
     didSet {
   
     }
   }
   
   @objc
-  var jwSources: [JWSource]? {
+  open var jwSources: [JWSource]? {
     didSet {
   
     }
   }
   
   @objc
-  var jwTracks: [JWTrack]? {
+  open var jwTracks: [JWTrack]? {
     didSet {
   
     }
   }
   
   @objc
-  var jwAdBreaks: [JWAdBreak]? {
+  open var jwAdBreaks: [JWAdBreak]? {
     didSet {
   
     }
   }
   
   @objc
-  var jwAdConfigs: JWAdConfig? {
+  open var jwAdConfigs: JWAdConfig? {
     didSet {
   
     }
   }
   
   @objc
-  var jwSkins: JWSkinStyling? {
+  open var jwSkins: JWSkinStyling? {
     didSet {
   
     }
   }
   
-  lazy var fullScreenSubview: UIView = {
+  open lazy var fullScreenSubview: UIView = {
     let view = UIView(frame: .zero)
     self.superview?.addSubview(view)
     return view
   }()
   
-  lazy var player: JWPlayerController = {
+  open lazy var player: JWPlayerController = {
     let player = JWPlayerController(config: jwConfigs)!
     player.view.frame = CGRect.zero
     player.view.autoresizingMask = [
