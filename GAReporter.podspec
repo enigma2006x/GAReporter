@@ -17,10 +17,10 @@ s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "David Wu" => "ji3g4kami@gmail.com" }
 
 # 5 - Replace this URL with your own GitHub page's URL (from the address bar)
-s.homepage = "https://github.com/ji3g4kami/GAReporter"
+s.homepage = "https://github.com/enigma2006x/GAReporter.git"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/ji3g4kami/GAReporter.git", 
+s.source = { :git => "https://github.com/enigma2006x/GAReporter.git", 
              :tag => "#{s.version}" }
 
 # 7 - Frameworks, libraries and dependencies

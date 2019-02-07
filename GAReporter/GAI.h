@@ -6,7 +6,7 @@
  */
 
 #import <Foundation/Foundation.h>
-
+#import <JWPlayer_iOS_SDK/JWPlayerController.h>
 #import "GAILogger.h"
 #import "GAITrackedViewController.h"
 #import "GAITracker.h"

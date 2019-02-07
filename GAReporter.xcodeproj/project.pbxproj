@@ -21,6 +21,8 @@
 		4072097321369B000020ADC2 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4072097221369AFF0020ADC2 /* libGoogleAnalytics.a */; };
 		4072099421378B8D0020ADC2 /* GAReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4072099321378B8D0020ADC2 /* GAReporter.swift */; };
 		4072099F2138D3230020ADC2 /* libAdIdAccessLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4072099E2138D3230020ADC2 /* libAdIdAccessLibrary.a */; };
+		83130D1C220BDE8F00B60CB9 /* JWPlayer_iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83130D1B220BDE8F00B60CB9 /* JWPlayer_iOS_SDK.framework */; };
+		83130D1E220BDEC100B60CB9 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83130D1D220BDEC100B60CB9 /* PlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		4072099321378B8D0020ADC2 /* GAReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAReporter.swift; sourceTree = "<group>"; };
 		4072099E2138D3230020ADC2 /* libAdIdAccessLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdIdAccessLibrary.a; sourceTree = "<group>"; };
 		407209A02138D3380020ADC2 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		83130D1B220BDE8F00B60CB9 /* JWPlayer_iOS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JWPlayer_iOS_SDK.framework; sourceTree = "<group>"; };
+		83130D1D220BDEC100B60CB9 /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			files = (
 				4072097321369B000020ADC2 /* libGoogleAnalytics.a in Frameworks */,
 				4072099F2138D3230020ADC2 /* libAdIdAccessLibrary.a in Frameworks */,
+				83130D1C220BDE8F00B60CB9 /* JWPlayer_iOS_SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +102,7 @@
 				4072096421369AD70020ADC2 /* GAITrackedViewController.h */,
 				4072095F21369AD60020ADC2 /* GAITracker.h */,
 				4072095621368FA20020ADC2 /* Info.plist */,
+				83130D1D220BDEC100B60CB9 /* PlayerView.swift */,
 				4072099321378B8D0020ADC2 /* GAReporter.swift */,
 			);
 			path = GAReporter;
@@ -105,6 +111,7 @@
 		4072097121369AFF0020ADC2 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				83130D1B220BDE8F00B60CB9 /* JWPlayer_iOS_SDK.framework */,
 				4072099E2138D3230020ADC2 /* libAdIdAccessLibrary.a */,
 				4072097221369AFF0020ADC2 /* libGoogleAnalytics.a */,
 			);
@@ -214,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83130D1E220BDEC100B60CB9 /* PlayerView.swift in Sources */,
 				4072099421378B8D0020ADC2 /* GAReporter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +362,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GAReporter/Libraries",
+				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/GAReporter";
 				INFOPLIST_FILE = GAReporter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -392,6 +404,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GAReporter/Libraries",
+				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/GAReporter";
 				INFOPLIST_FILE = GAReporter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
